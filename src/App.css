@@ -1,16 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +23,38 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  width: 90vw;
+  background-color: green;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.current-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1em;
+}
+
+@media screen and (min-width: 500px) {
+  .card {
+    width: 500px;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+
   }
+
 }

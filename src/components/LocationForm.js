@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LocationForm.css';
 
 function LocationForm({ cityOrZip }) {
     const [cityZip, setCityZip] = useState('');
@@ -19,7 +20,8 @@ function LocationForm({ cityOrZip }) {
                     }}
                     placeholder='City or zip here...'
                 />
-                <input type='submit' value='click here' />
+                <br />
+                <input type='submit' value='Update Location' />
             </form>
         </>
     );
